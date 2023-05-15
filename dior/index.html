@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIOR</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="common.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <section class="main">
+        <nav>
+          <div class="gnb" role="gnb">
+            <ul>
+              <li>
+                <a href="product.html" class="fashion_title active"
+                  >패션 & 악세사리</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="logo">
+            <a href="index.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                style="fill: rgb(0, 0, 0)"
+                viewBox="0 0 494.5 138.3"
+              >
+                <path
+                  d="M1.5 2.7h64.2c55.2 0 76.8 32.4 76.8 66.7 0 34.9-27.7 66-80.4 66H1.6c-1.1 0-1.5-.7-1.5-1.3 0-.7.7-1.3 1.7-1.3h11.3c3.5 0 5.8-2.1 5.8-6V11.5c0-2.9-1.4-6.1-6-6.1H1.4C.5 5.4 0 4.8 0 4.1c0-.6.2-1.4 1.5-1.4m40.1 126.5c0 2.9 1.3 3.8 3.2 3.8h17c41.9 0 57.1-32.1 57.1-64.3S102.8 5.3 67.4 5.3H44.3c-2.4 0-2.6 2-2.6 2.9l-.1 121zM148.9 2.7c-1 0-1.9.4-1.9 1.2 0 .8.5 1.3 1.4 1.3h11.3c2.6 0 5.1 1.8 5.1 6.8v114.9c0 2.4-1.8 6-5 6h-11.2c-1.3 0-1.4 1-1.4 1.4 0 .4-.1 1.1 1.4 1.1H203c.8 0 1.9-.1 1.9-.9s-.2-1.6-1.6-1.6h-10.5c-1.5 0-5.6-.9-5.6-5.5V10.8c0-3.3 2.1-5.5 5.9-5.5h10.3c.9 0 1.4-.5 1.4-1.2s-.5-1.3-1.7-1.3h-54.2zm85 66.4c0-36.7 16.4-66.4 47.2-66.4 30.2 0 47.2 29.7 47.2 66.4s-15.5 66.4-47.2 66.4c-30.7.1-47.2-29.7-47.2-66.4m47.2 69.2c43.8 0 71.4-31 71.4-69.1S325.2 0 281.1 0c-44 0-71.4 31-71.4 69.1s28.5 69.2 71.4 69.2m211.4-3.7c-17.2 1.8-26.7-26.4-35.4-39.8-6.5-9.9-20.3-20-33.9-22 22.4-1.3 47.5-8.5 47.5-33.9 0-20.6-12.7-36.2-59.3-36.2h-53.7c-.7 0-1.4.4-1.4 1.2 0 .8.7 1.3 1.4 1.3H370c2.6 0 5.1 1.8 5.1 6.8v114.9c0 2.4-1.8 6-5 6H358c-1 0-1.4.8-1.4 1.2s.4 1.3 1.4 1.3h57c.8 0 1.5-.4 1.5-1.2 0-.8-.5-1.3-1.6-1.3h-11.5c-1.5 0-5.6-1-5.6-5.5V73.1h5.9c28.2 0 30.3 30.6 44.3 48.1 12 15 27.7 16.9 36.6 16.9 3.8 0 6.4-.1 8.8-.7 1.5-.5 1.8-3.1-.9-2.8m-89-129.4h8.3c14.2 0 37.2 5.6 37.2 32.4 0 24.6-20.4 32.9-39.3 32.9h-12.1V10.8c0-3.4 2.1-5.6 5.9-5.6"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="sns">
+            <div class="search">
+              <span class="material-symbols-outlined"> search </span>
+            </div>
+            <div class="heart">
+              <span class="material-symbols-outlined"> favorite </span>
+            </div>
+            <div class="customer">
+              <span class="material-symbols-outlined"> person </span>
+            </div>
+            <div class="cart">
+              <span class="material-symbols-outlined">shopping_bag</span>
+            </div>
+            <div class="bar">
+              <span class="material-symbols-outlined">menu</span>
+            </div>
+          </div>
+        </nav>
+        <div class="search1">
+          <input type="text" placeholder="상품을 검색해보세요" />
+        </div>
+        <div class="gnbList" role="gnbList">
+          <a href="#" class="close_btn">
+            <span class="material-symbols-outlined"> close </span>
+          </a>
+          <div class="fashion">
+            <h1 class="hidden">패션 & 악세사리</h1>
+            <ul class="dropdown">
+              <li>
+                <a href="product.html" class="active">선물 & 맞춤 제작</a>
+              </li>
+              <li><a href="product.html">여성 패션</a></li>
+            </ul>
+          </div>
+          <div class="perfume">
+            <h1 class="hidden h1">향수 & 뷰티</h1>
+            <ul class="dropdown">
+              <li><a href="product.html">여성 향수</a></li>
+              <li><a href="product.html">남성 향수</a></li>
+              <li>
+                <a href="product.html">라 콜렉시옹 프리베 크리스챤 디올</a>
+              </li>
+              <li><a href="product.html">메이크업</a></li>
+              <li><a href="product.html">스킨케어</a></li>
+              <li><a href="product.html">디올스파</a></li>
+              <li><a href="product.html">디올소개</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="product1">
+        <img src="img/gifting-bag3.avif" alt="" />
+        <img src="img/gifting-jewelry3.avif" alt="" />
+        <img src="img/gifting-handbag3.avif" alt="" />
+        <img src="img/gifting-shoes3.avif" alt="" />
+      </section>
+      <section class="title">
+        <h4>어버이날 여성 기프트</h4>
+        <p>
+          디올 하우스의 완벽한 기프트 셀렉션과 함께 어버이날 행복을 전달해
+          보세요.
+        </p>
+        <p class="order">
+          <a href="product.html">주문하기</a>
+        </p>
+      </section>
+      <section class="product2">
+        <img src="img/womens-fashion-all-bags14.avif" alt="" />
+        <img src="img/mens-fashion-cd-diamond11.avif" alt="" />
+      </section>
+      <section class="info">
+        <div>온라인 부티크 서비스</div>
+        <div>아이코닉 디올 박스</div>
+        <div>무료 배송</div>
+        <div>7일 이내 무료 반품</div>
+      </section>
+      <section class="menu">
+        <div>온라인 서비스</div>
+        <div>그녀를 위한 기프트</div>
+        <div>그를 위한 기프트</div>
+        <div>여성 가방</div>
+        <div>남성 스니커즈</div>
+        <div>여성 패션 주얼리</div>
+        <div>여성 가죽 소품</div>
+      </section>
+      <section class="footer">
+        <p>
+          크리스챤디올꾸뛰르코리아주식회사 | 04539 서울특별시 중구 을지로5길 19,
+          26층(수하동) | 사업자등록번호: 120-81-74197
+        </p>
+        <p>대표자: 트렁히엔트란, Khong May Wan Sharon | 통신판매업</p>
+        <p>신고번호: 2021-서울중구-01116 | 사업자정보확인</p>
+        <p>
+          개인정보관리책임자: 김지혜I 고객센터: 02-3280-0104
+          (contactdiorkr@christiandior.com) | 호스팅 서비스: Smile Hosting
+        </p>
+        <p>COPYRIGHT © CHRISTIAN DIOR COUTURE KOREA ALL RIGHTS RESERVED.</p>
+        <p>토스페이먼츠 구매안전서비스 이용 확인증 확인하기</p>
+        <p>
+          크리스챤디올꾸뛰르코리아㈜는 통신판매중개자로서 본 웹사이트와 연결된
+          사이트에서 엘브이엠에치코스메틱스(유)가 판매하는 뷰티 제품의
+          거래당사자가 아니며,<br />
+          엘브이엠에치코스메틱스(유)가 등록한 상품, 거래정보 및 거래에 대해
+          크리스챤디올꾸뛰르코리아㈜는 일체 책임을 지지 않습니다.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

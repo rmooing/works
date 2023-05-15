@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  list-style: none;
+}
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+}
+
+section {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #535353;
+}
+
+:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+
+/* main */
+.main {
+  width: 100%;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 10;
+}
+
+.main nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.main .gnb {
+  width: 40%;
+}
+
+.main .gnb .fashion_title.active {
+  font-weight: 600;
+  color: #000;
+}
+
+.main .gnb ul {
+  display: flex;
+  font-size: 13px;
+}
+
+.main .gnb ul li {
+  padding: 10px 10px;
+}
+
+.search1 {
+  display: none;
+}
+
+.main .logo {
+  width: 20%;
+  text-align: center;
+}
+
+.main .logo svg {
+  width: 84px;
+  fill: #000;
+}
+
+.main .sns {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+}
+
+.main .sns .bar {
+  display: none;
+}
+
+.main .sns div {
+  padding: 10px 5px;
+}
+
+.main .sns .customer .material-symbols-outlined {
+  font-size: 30px;
+}
+
+.gnbList {
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+  font-size: 13px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.gnbList .close_btn {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.gnbList .dropdown {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.gnbList .dropdown li {
+  padding: 25px 12px;
+}
+
+.gnbList .dropdown li a:hover,
+.gnbList .dropdown li a.active {
+  color: #000;
+  font-weight: 600;
+}
+
+.gnbList .perfume {
+  display: none;
+}
+
+.gnbList .perfume.active {
+  display: block;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+
+/* info */
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(221, 221, 221);
+  border-bottom: 1px solid rgb(221, 221, 221);
+  width: 100%;
+  height: 120px;
+  margin-top: 50px;
+  font-size: 13px;
+}
+
+.info div {
+  margin-right: 18px;
+}
+
+
+/* menu */
+.menu {
+  border-bottom: 1px solid rgb(221, 221, 221);
+  height: 120px;
+  font-size: 13px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.menu div {
+  margin-right: 10px;
+}
+
+.main div:nth-of-type(7) {
+  margin-right: 0;
+}
+
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 270px;
+  font-size: 12px;
+  color: rgb(140, 140, 140);
+  padding-top: 40px;
+  padding-left: 40px;
+  line-height: 23px;
+}
+
+
+
+
+
+@media all and (max-width:1024px) {
+  .main {
+    margin-bottom: 0;
+    /* position: static; */
+  }
+
+  .main nav {
+    height: 60px;
+    padding: 0 40px;
+  }
+
+  .main nav .gnb {
+    display: none;
+    /* position: static; */
+    float: right;
+    width: auto;
+    margin-top: 6px;
+    background: none;
+  }
+
+  .main .logo {
+    text-align: left;
+  }
+
+  .main .logo svg {
+    width: 70px;
+  }
+
+  .main .sns .search {
+    display: none;
+  }
+
+  .main .sns .bar {
+    display: block;
+  }
+
+  .gnbList {
+    display: none;
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    padding-left: 0;
+    font-size: 13px;
+    border-top: none;
+    border-bottom: none;
+    overflow-y: auto;
+    flex-direction: column;
+  }
+
+  .gnbList.active {
+    display: flex;
+    z-index: 10;
+  }
+
+  .gnbList .close_btn {
+    display: block;
+  }
+
+  .gnbList .fashion {
+    margin-top: 60px;
+  }
+
+  .gnbList .fashion h1.show {
+    display: block;
+    padding: 25px 12px;
+  }
+
+  .gnbList .fashion .h1 {
+    display: block;
+  }
+
+  .gnbList .dropdown {
+    flex-direction: column;
+  }
+
+  .gnbList .dropdown li {
+    width: 100%;
+    margin-right: 0;
+    padding: 15px 30px;
+  }
+
+  .gnbList .dropdown li a.active {
+    color: #535353;
+    font-weight: normal;
+  }
+
+  .search1 {
+    width: 100%;
+    padding: 0 40px 40px 40px;
+    display: block;
+  }
+
+  .search1 input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid rgb(141, 141, 141);
+    padding-bottom: 10px;
+  }
+}
+
+;
